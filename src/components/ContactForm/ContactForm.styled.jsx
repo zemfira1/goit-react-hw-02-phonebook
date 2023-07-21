@@ -28,4 +28,5 @@ export const Button = styled.button`
     width: 100px;
     border: 1px solid grey;
     border-radius: 4px;
+    background-color: inherit;
 `;
