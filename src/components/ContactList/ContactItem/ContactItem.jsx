@@ -2,7 +2,7 @@ import { Contact, ButtonDelete } from './ContactItem.styled';
 import PropTypes from "prop-types";
 import { FiPhone } from 'react-icons/fi';
 
-export const ContactItem = ({ id, name, number, onDelete  }) => {
+export const ContactItem = ({ id, name, number, onDelete }) => {
     return (
         <Contact key={id}>
             <FiPhone />
