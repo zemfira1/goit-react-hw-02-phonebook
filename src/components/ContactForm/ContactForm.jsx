@@ -10,18 +10,13 @@ export class ContactForm extends Component{
         number: ''
     }
  
-    inputChange = event => {
-    // console.log(event.currentTarget);
-    // console.log(event.currentTarget.name);
-    // console.log(event.currentTarget.value);
-        
+    inputChange = event => {        
     const { name } = event.currentTarget;
     this.setState({ [name]: event.currentTarget.value });
     }
 
     dataSubmit = event =>{
         event.preventDefault();
-        //console.log(this.state);
       
         this.props.formSubmit(this.state);
         this.reset();
